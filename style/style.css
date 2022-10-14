@@ -11,3 +11,16 @@ li:hover a {
   color: rgb(78, 148, 209) !important;
   font-weight: bold;
 }
+
+.carousel-item {
+  height: 670px;
+}
+
+.carousel-item img {
+  margin-top: -120px;
+}
+
+.carousel-item .display-4 {
+  margin-top: -440px;
+}
+
