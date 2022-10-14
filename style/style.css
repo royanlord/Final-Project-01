@@ -1,0 +1,13 @@
+li:hover {
+  background-color: #118659;
+  border-radius: 5px;
+}
+
+li:hover a {
+  color: whitesmoke !important;
+}
+
+.aktif {
+  color: rgb(78, 148, 209) !important;
+  font-weight: bold;
+}
