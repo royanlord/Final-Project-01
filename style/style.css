@@ -1,26 +1,134 @@
-li:hover {
-  background-color: #118659;
+@font-face {
+  font-family: Alkalami-Reguler;
+  src: url('font/Alkalami-Regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar-brand {
+  font-family: Alkalami-Reguler;
+}
+
+/* li:hover {
+  background-color: rgb(100, 177, 245);
   border-radius: 5px;
 }
 
-li:hover a {
+li a:hover {
   color: whitesmoke !important;
 }
 
 .aktif {
   color: rgb(78, 148, 209) !important;
   font-weight: bold;
-}
+} */
+
+/* li:hover .btn {
+  background-color: rgb(78, 148, 209) !important;
+  font-weight: bold;;
+} */
 
 .carousel-item {
-  height: 670px;
+  height: 560px;
+  /* min-height: 300px; */
+  /* background: no-repeat scroll center scroll;
+  background-size: cover;
+  -webkit-background-size: cover; */
 }
 
 .carousel-item img {
-  margin-top: -120px;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.4);
+  animation: zoom 3s linear infinite;
 }
 
-.carousel-item .display-4 {
-  margin-top: -440px;
+/* #slideImg {
+  animation: zoom 3s linear infinite;
+} */
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.3);
+  }
+  15% {
+    transform: scale(1);
+  }
+  85% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.3);
+  }
 }
 
+.carousel-caption .btn-carousel {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.carousel-caption .btn-carousel:hover {
+  background-color: #fd7250;
+  border: 2px solid #fd7250;
+}
+
+.carousel-caption h5 {
+  margin-top: -290px;
+  font-size: 70px;
+  font-weight: 700;
+}
+
+.modal-footer .btn-modal {
+  /* border-radius: 0; */
+  border: 1px black solid;
+}
+
+.modal-footer .hvr-fade:hover {
+  background-color: red;
+  font-weight: bold;
+  color: #fff;
+}
+
+.blog {
+  position: relative;
+  margin: 4em 0;
+}
+
+.blog h1 {
+  margin: 2em;
+}
+
+.blog .card {
+  box-shadow: 0 0 5px rgb(134, 133, 133);
+  height: 515px;
+}
+
+.blog .card img {
+  width: 100%;
+  height: 15em;
+  filter: brightness(0.8);
+}
+
+.blog .card-body {
+  padding: 1em;
+}
+
+.step-work {
+  max-height: auto;
+}
+
+.step-work .card {
+  box-shadow: 0 0 5px rgb(134, 133, 133);
+  height: 14rem;
+  max-width: auto;
+}
+
+.step-work .card-title {
+  font-size: 13px;
+}
+
+.card-body .icon-step {
+  margin-top: 1.5rem;
+}
