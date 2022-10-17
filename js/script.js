@@ -1,3 +1,11 @@
+// nav on scroll
+// const navOnScroll = document.getElementById('myNavbar')
+hide_on_scroll({
+  nav_id : 'demo1Navbar',
+  hide_onscroll_mobile : true,
+  nav_offset : 256,
+});
+
 function focusNav(elementTag) {
   let navigasi = document.querySelectorAll('.nav-link');
 
