@@ -25,7 +25,7 @@
     <title>iClean</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" id="demo1Navbar">
       <div class="container-fluid">
         <a class="navbar-brand ps-4 text-white fw-bold fs-2 pt-2" href="#">I-Clean</a>
         <button
@@ -46,10 +46,10 @@
           >
             <li class="nav-item">
               <a
-                class="nav-link text-white hvr-underline-from-center aktif"
+                class="nav-link text-white hvr-underline-from-center active"
                 onclick="focusNav(this)"
                 aria-current="page"
-                href="#"
+                href="#scrollSpyHeading1"
                 >Home</a
               >
             </li>
@@ -123,7 +123,7 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="style/images/laundry3.jpg" class="d-block w-100" alt="laundry-pict1">
+                <img src="style/images/laundry3.jpg" id="img-slide1" class="d-block w-100" alt="laundry-pict1">
                 <div class="carousel-caption">
                     <h5>i-Clean Laundry</h5>
                     <span>THE BEST LAUNDRY SERVICE BUSINESS</span><br>
@@ -182,7 +182,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="style/images/laundry2.jpg" class="d-block w-100" alt="laundry-pict2">
+                <img src="style/images/laundry2.jpg" id="img-slide2" class="d-block w-100" alt="laundry-pict2">
                 <div class="carousel-caption">
                     <h5>Do Your Laundry Smartly!</h5>
                     <p>Your laundry gets delivered to your preferred experts in a click.</p>
@@ -264,7 +264,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="style/images/Slide-1.jpg" class="d-block w-100" alt="laundry-pict3">
+                <img src="style/images/Slide-1.jpg" id="img-slide3" class="d-block w-100" alt="laundry-pict3">
                 <div class="carousel-caption">
                     <h5>Laundry Service Pick Up and Deliver to Your Door</h5>
                     <p>Provide laundry services. Ready to pick up and deliver your laundry.</p>
@@ -469,6 +469,7 @@
       crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    <script src="js/NavOnScroll.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
