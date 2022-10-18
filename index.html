@@ -81,6 +81,16 @@
                 onclick="focusNav(this)"
                 aria-current="page"
                 href="#"
+                data-value="about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link text-white hvr-underline-from-center"
+                onclick="focusNav(this)"
+                aria-current="page"
+                href="#"
                 data-value="blog"
                 >Blog</a
               >
@@ -105,9 +115,19 @@
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                Pages
+                Other
               </a>
               <ul class="dropdown-menu dropdown-menu-dark">
+                <li class="nav-item">
+                  <a
+                    class="dropdown-item text-white"
+                    onclick="focusNav(this)"
+                    aria-current="page"
+                    href="#"
+                    data-value="documentation"
+                    >Documentation</a
+                  >
+                </li>
                 <li>
                   <a
                     class="dropdown-item text-white"
@@ -124,30 +144,10 @@
                     onclick="focusNav(this)"
                     aria-current="page"
                     href="#"
-                    >Our Gallery</a
+                    >Todos</a
                   >
                 </li>
               </ul>
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white hvr-underline-from-center"
-                onclick="focusNav(this)"
-                aria-current="page"
-                href="#about"
-                data-value="about"
-                >About</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link text-white hvr-underline-from-center"
-                onclick="focusNav(this)"
-                aria-current="page"
-                href="#documentation"
-                data-value="blog"
-                >Documentation</a
-              >
             </li>
             <li class="nav-item">
               <a
@@ -537,11 +537,36 @@
       </button>
     </div>
 
+    <!-- about us -->
+    <section
+      id="about"
+      style="background-color: rgb(231, 231, 231)"
+    >
+      <h1 class="text-center title-sec pt-5">About Us</h1>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-md-5">
+            <p style="text-align: justify; text-justify: inter-word">
+              I-Clean adalah company yang bergerak dibidang jasa laundry. I-Clean didirikan karena adanya permasalahan kebutuhan masyarakat, yaitu bagi masyarakat yang ingin menghemat tenaga dan waktu untuk mengurus pakaian dan
+              barang-barang sandang lainnya. Company ini berdiri sejak 16 oktober 2022, di jl.Borneo dan didirika oleh mahasiswa yang sedang mencari solusi untuk masalah ini.
+            </p>
+          </div>
+          <div class="col-md-7 text-center">
+            <img
+              src="style/images/about.jpg"
+              alt="laundry"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div
-      class="blog mt-5"
+      class="blog"
       id="blog"
     >
-      <h1 class="text-center title-sec">Blog</h1>
+      <h1 class="text-center title-sec m-0 pb-5">Blog</h1>
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col-lg-4 col-md-4 col-sm-12">
@@ -614,51 +639,19 @@
         </div>
       </div>
     </div>
-    <!-- about us -->
-    <section id="about">
-      <div
-        class="container"
-        style="background-color: #c7c3bfe7"
-      >
-        <div class="row text-center mb-3">
-          <div class="col fs-3">
-            <h2><b>About Us</b></h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-5">
-            <p class="text-start">
-              I-Clean adalah company yang bergerak dibidang jasa laundry. I-Clean didirikan karena adanya permasalahan kebutuhan masyarakat, yaitu bagi masyarakat yang ingin menghemat tenaga dan waktu untuk mengurus pakaian dan
-              barang-barang sandang lainnya. Company ini berdiri sejak 16 oktober 2022, di jl.Borneo dan didirika oleh mahasiswa yang sedang mencari solusi untuk masalah ini.
-            </p>
-          </div>
-          <div class="col-md-7 text-center">
-            <img
-              src="img/about.jpg"
-              alt="laundry"
-              class="img-fluid"
-            />
-          </div>
-        </div>
-      </div>
-    </section>
 
     <!-- Documentation -->
-    <section id="documentation">
-      <div
-        class="container"
-        style="background-color: #b9967322"
-      >
-        <div class="row text-center mb-3">
-          <div class="col">
-            <h2 class="mb-3 mt-2"><b>Documentation</b></h2>
-          </div>
-        </div>
+    <section
+      id="documentation"
+      style="background-color: rgb(231, 231, 231)"
+    >
+      <h1 class="text-center title-sec pt-5">Documentation</h1>
+      <div class="container py-5">
         <div class="row">
           <div class="col-md-3 mb-3">
             <div class="card bg-light bg-gradient hvr-float">
               <img
-                src="img/anniespratt-cucian.jpg"
+                src="style/images/anniespratt-cucian.jpg"
                 class="card-img-top"
                 alt="Cucian"
               />
@@ -670,7 +663,7 @@
           <div class="col-md-3 mb-3">
             <div class="card bg-light bg-gradient hvr-float">
               <img
-                src="img/brunonascimento-jemuran.jpg"
+                src="style/images/brunonascimento-jemuran.jpg"
                 class="card-img-top"
                 alt="jemuran"
               />
@@ -682,7 +675,7 @@
           <div class="col-md-3 mb-3">
             <div class="card bg-light bg-gradient hvr-float">
               <img
-                src="img/ericvo-setrikaan.jpg"
+                src="style/images/ericvo-setrikaan.jpg"
                 class="card-img-top"
                 alt="setrikaan"
               />
@@ -694,7 +687,7 @@
           <div class="col-md-3 mb-3">
             <div class="card bg-light bg-gradient hvr-float">
               <img
-                src="img/dangold-selesai.jpg"
+                src="style/images/dangold-selesai.jpg"
                 class="card-img-top"
                 alt="laundry"
               />
@@ -709,9 +702,8 @@
 
     <!-- step work -->
     <div
-      class="step-work container-fluid mt-5"
+      class="step-work container-fluid"
       id="step-work"
-      style="background-color: rgb(231, 231, 231)"
     >
       <h1 class="text-center pt-5">Step Work</h1>
       <div class="container">
