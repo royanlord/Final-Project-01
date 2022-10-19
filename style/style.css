@@ -138,3 +138,21 @@ li a:hover {
 .card-body .icon-step {
   margin-top: 1.5rem;
 }
+
+.contact {
+  background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#03a9f5 30%,#03a9f5 100%) !important;
+}
+
+.bg-secondary {
+  height: 486px;
+}
+
+.table-contact span {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.map iframe {
+  width: 100%;
+  height: 550px;
+}
