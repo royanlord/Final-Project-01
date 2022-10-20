@@ -103,22 +103,13 @@ body {
   padding: 1em;
 }
 
-.documentation {
-  max-height: auto;
-}
-
 .documentation .card {
   box-shadow: 0 0 5px rgb(134, 133, 133);
-}
-
-.step-work {
-  max-height: auto;
 }
 
 .step-work .card {
   box-shadow: 0 0 5px rgb(134, 133, 133);
   height: 14rem;
-  max-width: auto;
 }
 
 .step-work .card-title {
