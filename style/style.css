@@ -3,44 +3,28 @@
   src: url('font/Alkalami-Regular.ttf');
 }
 
+@font-face {
+  font-family: Philosopher;
+  src: url('font/Philosopher-Regular.ttf');
+}
+
 * {
   box-sizing: border-box;
 }
 
+body {
+  font-family: 'Times New Roman', Times, serif;
+}
+
 .navbar-brand {
-  font-family: Alkalami-Reguler;
+  font-family: Philosopher;
 }
-
-/* li:hover {
-  background-color: rgb(100, 177, 245);
-  border-radius: 5px;
-}
-
-li a:hover {
-  color: whitesmoke !important;
-}
-
-.aktif {
-  color: rgb(78, 148, 209) !important;
-  font-weight: bold;
-} */
-
-/* li:hover .btn {
-  background-color: rgb(78, 148, 209) !important;
-  font-weight: bold;;
-} */
 
 .carousel-item {
-  /* height: 560px; */
   height: 625px;
-  /* min-height: 300px; */
-  /* background: no-repeat scroll center scroll;
-  background-size: cover;
-  -webkit-background-size: cover; */
 }
 
 .carousel-item #img-slide1, #img-slide3 {
-  /* height: 100%; */
   height: 140%;
   object-fit: cover;
   filter: brightness(0.4);
@@ -80,14 +64,12 @@ li a:hover {
 }
 
 .carousel-caption h5 {
-  /* margin-top: -29px; */
   margin-top: -320px;
   font-size: 70px;
   font-weight: 700;
 }
 
 .modal-footer .btn-modal {
-  /* border-radius: 0; */
   border: 1px black solid;
 }
 
@@ -121,6 +103,14 @@ li a:hover {
   padding: 1em;
 }
 
+.documentation {
+  max-height: auto;
+}
+
+.documentation .card {
+  box-shadow: 0 0 5px rgb(134, 133, 133);
+}
+
 .step-work {
   max-height: auto;
 }
@@ -139,6 +129,14 @@ li a:hover {
   margin-top: 1.5rem;
 }
 
+.list-group-item span .fa-circle-xmark {
+  cursor: pointer;
+}
+
+.list-group-item .form-check-input {
+  cursor: pointer;
+}
+
 .contact {
   background: linear-gradient(90deg,#0e3959 0%,#0e3959 30%,#03a9f5 30%,#03a9f5 100%) !important;
 }
@@ -155,4 +153,23 @@ li a:hover {
 .map iframe {
   width: 100%;
   height: 550px;
+}
+
+.footer-bawah a {
+  text-decoration: none;
+  color: white !important;
+}
+
+footer {
+  font-size: 14px;
+  color: white !important;
+}
+
+footer h3 {
+  font-family: Philosopher;
+}
+
+footer a {
+  color: white !important;
+  text-decoration: none;
 }
