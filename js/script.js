@@ -1,4 +1,3 @@
-// nav on scroll
 hide_on_scroll({
   nav_id : 'demo1Navbar',
   hide_onscroll_mobile : true,
@@ -6,7 +5,7 @@ hide_on_scroll({
 });
 
 
-// make autoscroll to certain sections when menu on the navbar is clicked
+
 $(document).ready(function(){
   $('.header').height($(window).height());
  
@@ -19,12 +18,12 @@ $(document).ready(function(){
 })
 
 
-// save suggestion to localstorage
+
 const inputSug = document.getElementById('inputSug');
 const btnAdd = document.getElementById('btnAdd');
 const parentTodo = document.querySelector('.list-group');
 
-// struktur
+
 let listItem = []
 
 function generateUniqSerial() {  
@@ -102,19 +101,17 @@ const manageLocaleStorage = (action, id, message = "") => {
       });
       break;
     case 'checked':
-      // reference object
+      
       for (let item of listItem) {
-        if (item.id == id) {
-          // ref
+        if (item.id == id) { 
           item.checked = true
         }
       }
       break;
       case 'unchecked':
-        // reference object
+        
         for (let item of listItem) {
           if (item.id == id) {
-            // ref
             item.checked = false
           }
         }
@@ -124,7 +121,7 @@ const manageLocaleStorage = (action, id, message = "") => {
   localStorage.setItem('Suggestion List', JSON.stringify(listItem));
 }
 
-// create
+
 if (localStorage.getItem("Suggestion List")) {
   listItem = JSON.parse(localStorage.getItem("Suggestion List")) || [];
   listItem && listItem.forEach((item) => {
@@ -150,16 +147,13 @@ if (localStorage.getItem("Suggestion List")) {
       }
 
     }, (data) => {
-
       const group = data && data?.group;
       const checked = data && data?.checked
 
       if (group && checked) {
-
         const itemId = checked.getAttribute("id")
 
         if (itemId) {
-
           manageLocaleStorage("delete", itemId)
           group.remove()
         }        
@@ -178,7 +172,6 @@ btnAdd.addEventListener('click', function () {
 
   if (inputSug.value != "") {
     item = { 
-
       "id": "todo-" + generateUniqSerial(),
       "text": inputSug.value,
       "checked": false
@@ -204,7 +197,6 @@ btnAdd.addEventListener('click', function () {
           }
         }
       }
-
     }, (data) => {
 
       const group = data && data?.group;
@@ -227,7 +219,6 @@ btnAdd.addEventListener('click', function () {
 });
   
 
-// contact form
 var getFirstName = document.getElementById('firstName');
 var getLastName = document.getElementById('lastName');
 var getEmail = document.getElementById('email');
@@ -276,7 +267,7 @@ btnSubmit.addEventListener('click', function (e) {
   }
 })
 
-// autoscroll when click link on footer
+
 $(document).ready(function(){
   $('.header').height($(window).height());
  
